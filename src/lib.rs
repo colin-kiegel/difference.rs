@@ -36,6 +36,9 @@
 #![deny(missing_docs)]
 #![deny(warnings)]
 
+extern crate prettytable;
+extern crate term;
+
 mod lcs;
 mod merge;
 mod display;
@@ -98,7 +101,7 @@ impl Changeset {
         Changeset {
             diffs: merge(orig, edit, &common, split),
             split: split.to_string(),
-            distance: dist,
+            distance: dist as i32,
         }
     }
 }

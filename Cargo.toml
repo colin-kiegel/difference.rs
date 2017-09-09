@@ -24,7 +24,8 @@ bin = ["getopts"]
 
 [dependencies]
 getopts = {version = "0.2", optional = true}
+prettytable-rs = "0.6"
+term = "0.4"
 
 [dev-dependencies]
-term = "0.2.7"
 quickcheck = "0.4"

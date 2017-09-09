@@ -108,7 +108,6 @@ fn simple() {
 }
 
 #[test]
-#[ignore]
 fn issue_19() {
     // this should work but it doesn't
     // https://github.com/johannhof/difference.rs/issues/19
